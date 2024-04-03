@@ -59,10 +59,10 @@ steps:
 
 # test
 
-- task: Windows Application Driver@0
-  inputs:
-    OperationType: 'Start'
-    AgentResolution: '1080p'
+#- task: Windows Application Driver@0
+#  inputs:
+#    OperationType: 'Start'
+#    AgentResolution: '1080p'
 
 - task: VSTest@2
   inputs:
@@ -77,10 +77,10 @@ steps:
     platform: '$(buildPlatform)'
     configuration: '$(buildConfiguration)'
 
-- task: Windows Application Driver@0
-  inputs:
-    OperationType: 'Stop'
-  condition: always()
+#- task: Windows Application Driver@0
+#  inputs:
+#    OperationType: 'Stop'
+#  condition: always()
 
 # publish
 
