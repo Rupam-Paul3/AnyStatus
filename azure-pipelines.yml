@@ -10,8 +10,7 @@ trigger:
     exclude:
     - '*.md'
 
-pool:
-  vmImage: 'windows-latest'
+pool: 'esm-24.1-windows'
 
 variables:
   solution: '**/*.sln'
